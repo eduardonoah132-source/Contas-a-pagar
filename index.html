@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contas a Pagar</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="profile">
+    <div class="avatar"></div>
+    <span>Usuário</span>
+  </div>
+  <div class="menu">
+    <p>Início</p>
+    <p class="active">Contas a pagar</p>
+  </div>
+</div>
+
+<div class="main">
+  <div class="header">
+    <input class="search" placeholder="Buscar...">
+  </div>
+
+  <div class="card">
+    <h2>Contas a pagar</h2>
+
+    <div class="section-title">Contas Fixas</div>
+    <div id="fixas"></div>
+
+    <div class="section-title">Contas Variáveis</div>
+    <div id="variaveis"></div>
+
+    <div class="add-box">
+      <input id="nome" placeholder="Nome">
+      <input id="valor" type="number" placeholder="Valor">
+      <input id="vencimento" type="date">
+      <select id="tipo">
+        <option value="fixa">Fixa</option>
+        <option value="variavel">Variável</option>
+      </select>
+      <button onclick="addConta()">Adicionar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

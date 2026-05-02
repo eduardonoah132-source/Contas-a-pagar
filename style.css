@@ -1,0 +1,23 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{display:flex;background:#f4f6f8}
+.sidebar{width:240px;background:#fff;height:100vh;padding:20px;border-right:1px solid #eee}
+.profile{display:flex;align-items:center;gap:10px;margin-bottom:30px}
+.avatar{width:40px;height:40px;border-radius:50%;background:#ddd}
+.menu p{padding:10px;border-radius:8px;cursor:pointer;color:#555}
+.menu p.active,.menu p:hover{background:#e8f0fe;color:#1967d2}
+.main{flex:1;padding:30px}
+.header{margin-bottom:20px}
+.search{width:300px;padding:10px;border-radius:8px;border:1px solid #ddd}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.section-title{font-size:14px;color:#777;margin:15px 0 10px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px}
+.item:hover{background:#f5f7fa}
+.left{display:flex;align-items:center;gap:12px}
+.name{font-weight:500}
+.sub{font-size:12px;color:#888}
+.value strong{display:block}
+input[type=checkbox]{accent-color:#34a853}
+.add-box{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.add-box input,select{padding:10px;border-radius:8px;border:1px solid #ddd}
+button{background:#1967d2;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer}
+button:hover{background:#1557b0}
