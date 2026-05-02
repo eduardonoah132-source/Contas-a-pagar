@@ -202,7 +202,15 @@ padding: 40px;
 }
 
 .header {
-margin-bottom: 25px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #e2e8f0; /* LINHA IGUAL FIGMA */
 }
 
 /* SEARCH */
@@ -439,4 +447,7 @@ font-weight: 600;
 
 .icon-btn:hover {
   background: #e2e8f0;
+}
+.main {
+  padding-top: 20px;
 }

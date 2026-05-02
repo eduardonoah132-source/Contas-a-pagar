@@ -4,7 +4,8 @@ async function carregar(){
 
   const fixas = document.getElementById('fixas');
   const variaveis = document.getElementById('variaveis');
-  fixas.innerHTML=''; variaveis.innerHTML='';
+  fixas.innerHTML=''; 
+  variaveis.innerHTML='';
 
   data.forEach(c=>{
     let html = `
@@ -46,4 +47,18 @@ async function toggle(id){
   carregar();
 }
 
+/* ✅ NOVO: MENU ATIVO AUTOMÁTICO */
+function ativarMenu() {
+  const itens = document.querySelectorAll('.menu p');
+
+  itens.forEach(item => {
+    item.addEventListener('click', () => {
+      itens.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+}
+
+/* INIT */
 carregar();
+ativarMenu();
