@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -21,32 +22,43 @@
 </div>
 
 <div class="main">
-  <div class="header">
-    <input class="search" placeholder="Buscar...">
+
+  <!-- PAGE CONTENT -->
+
+  <div class="page">
+
+```
+<div class="header">
+  <input class="search" placeholder="Buscar...">
+</div>
+
+<div class="card">
+  <h1>Contas a pagar</h1>
+
+  <div class="section-title">Contas Fixas</div>
+  <div id="fixas"></div>
+
+  <div class="section-title">Contas Variáveis</div>
+  <div id="variaveis"></div>
+
+  <div class="add-box">
+    <input id="nome" placeholder="Nome">
+    <input id="valor" type="number" placeholder="Valor">
+    <input id="vencimento" type="date">
+    <select id="tipo">
+      <option value="fixa">Fixa</option>
+      <option value="variavel">Variável</option>
+    </select>
+    <button onclick="addConta()">Adicionar</button>
   </div>
+</div>
+```
 
-  <div class="card">
-    <h2>Contas a pagar</h2>
+  </div><!-- /page -->
 
-    <div class="section-title">Contas Fixas</div>
-    <div id="fixas"></div>
-
-    <div class="section-title">Contas Variáveis</div>
-    <div id="variaveis"></div>
-
-    <div class="add-box">
-      <input id="nome" placeholder="Nome">
-      <input id="valor" type="number" placeholder="Valor">
-      <input id="vencimento" type="date">
-      <select id="tipo">
-        <option value="fixa">Fixa</option>
-        <option value="variavel">Variável</option>
-      </select>
-      <button onclick="addConta()">Adicionar</button>
-    </div>
-  </div>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
